@@ -168,7 +168,7 @@ export default function ReservationTable() {
                     borderBottom: "1px solid rgba(225, 225, 225, 1)",
                   }}
                 >
-                  <TableCell className="truncate max-w-[100px]">{row.unit}</TableCell>
+                  <TableCell className="truncate max-w-[100px] font-bold">{row.unit}</TableCell>
                   <TableCell className="truncate max-w-[140px]">{row.room}</TableCell>
                   <TableCell className="truncate max-w-[90px]">{row.capacity} Orang</TableCell>
                   <TableCell className="truncate max-w-[120px]">{row.date}</TableCell>
@@ -204,7 +204,7 @@ export default function ReservationTable() {
               <TableCell colSpan={8} className="p-3">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-600">
-                    Showing {from}-{to} of {total}
+                    Showing <span className="font-bold">{from}-{to}</span> of <span className="font-bold">{total}</span>
                   </span>
                   <Pagination>
                     <PaginationContent>
