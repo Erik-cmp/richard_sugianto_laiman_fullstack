@@ -66,8 +66,9 @@ function PaginationPrevious({ className, disabled, ...props }: React.ComponentPr
         className
       )}
       {...props}
-    >
-      <ChevronLeft className="w-4 h-4" />
+    >      
+      <ChevronLeft className="w-4 h-4 pl-1" />
+      <span>Back</span>
     </button>
   )
 }
@@ -84,6 +85,7 @@ function PaginationNext({ className, disabled, ...props }: React.ComponentProps<
       )}
       {...props}
     >
+      <span className="pl-1">Next</span>
       <ChevronRight className="w-4 h-4" />
     </button>
   )
